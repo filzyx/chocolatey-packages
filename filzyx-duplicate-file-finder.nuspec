@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>filzyx-duplicate-file-finder</id>
+    <version>0.6.1</version>
+    <title>Duplicate File Finder</title>
+    <authors>Filzyx</authors>
+    <owners>filzyx</owners>
+    <projectUrl>https://filzyx.com/</projectUrl>
+    <packageSourceUrl>https://github.com/filzyx/chocolatey-packages/tree/main/filzyx-duplicate-file-finder</packageSourceUrl>
+    <projectSourceUrl>https://github.com/filzyx/chocolatey-packages</projectSourceUrl>
+    <docsUrl>https://filzyx.com/</docsUrl>
+    <iconUrl>https://filzyx.com/assets/img/apps/duplicate-file-finder.png</iconUrl>
+    <licenseUrl>https://filzyx.com/duplicate-file-finder/</licenseUrl>
+    <releaseNotes>0.6.1 вЂ” first public release: four scan modes (exact SHA-256 duplicates, similar photos, music by tags, music by audio fingerprint), live results during the scan, Recycle Bin cleanup.</releaseNotes>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <copyright>Filzyx</copyright>
+    <tags>duplicate-files duplicate-finder duplicate-cleaner dedupe photos music cleanup filzyx trial-freeware</tags>
+    <summary>Free duplicate file finder for Windows: SHA-256 exact duplicates, similar photos, duplicate music by tags or by sound.</summary>
+    <description><![CDATA[
+### Duplicate File Finder
+
+A free Windows 10/11 (x64) utility that finds and removes duplicate files with four search modes: exact duplicates validated by a two-pass SHA-256 pipeline, similar photos found with perceptual hashing, duplicate music grouped by embedded tags, and identical recordings recognised by audio fingerprints.
+
+Results are reported live while the scan runs. The oldest file in each group is kept as the original, selection is always manual, and removed copies go to the Recycle Bin.
+
+**Notes**
+
+- Installs `DuplicateFileFinder-Setup.exe` (Inno Setup) silently via `/VERYSILENT`.
+- Publisher is the package maintainer.
+- No bundle, no adware, no telemetry, no account.
+- Uninstalls cleanly via the standard Inno uninstaller.
+]]></description>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
